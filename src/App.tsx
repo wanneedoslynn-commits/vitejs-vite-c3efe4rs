@@ -73,17 +73,7 @@ const formatDateTH = (ymd: string) => {
   });
 };
 
-const formatDateFullTH = (ymd: string) => {
-  if (!ymd) return '-';
 
-  const d = new Date(`${ymd}T00:00:00`);
-  return d.toLocaleDateString('th-TH', {
-    weekday: 'long',
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
-  });
-};
 
 export default function App() {
   const [user, setUser] = useState('');
